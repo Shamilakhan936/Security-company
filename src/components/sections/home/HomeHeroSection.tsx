@@ -15,7 +15,7 @@ export function HomeHeroSection() {
 
       <div className="relative mt-20 pb-0">
         <div className="grid grid-cols-1 gap-16 xl:grid-cols-2">
-          <div>
+          <div className="xl:pb-96">
             <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-zinc-700 bg-[#131313] px-5 py-2 text-sm text-zinc-200">
               <span className="h-2.5 w-2.5 rounded-full bg-[#00C566]" />
               Trustindex Rated 4.5
