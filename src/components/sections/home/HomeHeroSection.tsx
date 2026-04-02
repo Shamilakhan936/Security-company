@@ -8,7 +8,7 @@ const anton = Anton({
 
 export function HomeHeroSection() {
   return (
-    <section className="mx-auto max-w-[1720px] px-[80px] pt-10 pb-20">
+    <section className="mx-auto max-w-[1720px] px-[80px] pt-10 pb-16">
       <Header />
 
       <div className="mt-20 grid grid-cols-1 gap-16 xl:grid-cols-2">
