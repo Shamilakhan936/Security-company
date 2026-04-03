@@ -1,3 +1,4 @@
+import Image from "next/image";
 type HomeHeroIntroCardProps = {
   className?: string;
 };
@@ -42,13 +43,13 @@ function CalloutIcon({ className }: { className?: string }) {
 export function HomeHeroIntroCard({ className = "" }: HomeHeroIntroCardProps) {
   return (
     <div
-      className={`flex flex-col gap-8 border border-[#EAB308] bg-[#111111] p-8 md:flex-row md:items-start md:gap-12 md:p-12 lg:gap-14 lg:p-14 ${className}`}
+      className={`flex flex-row items-start gap-4 border rounded-t-[6px] border-[#EAB308] border-b-0 bg-[#111111] p-4 sm:gap-6 sm:p-6 md:gap-10 md:p-[30px] lg:gap-14 lg:p-[60px] xl:p-[80px] ${className}`}
     >
-      <div className="flex shrink-0 justify-center md:justify-start">
-        <CalloutIcon className="h-[120px] w-[72px] text-[#EAB308] md:h-[140px] md:w-[84px]" />
+      <div className="flex shrink-0">
+        <Image src="/assets/icons/calloutIcon.png" alt="check" width={28} height={28} className="h-[40px] w-[28px] text-[#EAB308] sm:h-[50px] sm:w-[36px] md:h-[60px] md:w-[42px] lg:h-[78px] lg:w-[54px]" />
       </div>
-      <div className="min-w-0 flex-1 space-y-5 text-[15px] leading-relaxed text-white md:text-base md:leading-7">
-        <p>
+      <div className="min-w-0 flex-1 space-y-3 leading-relaxed text-white">
+        <p className="text-[13px] font-light font-[Barlow] sm:text-[16px] md:text-[20px] lg:text-[24px] xl:text-[30px]">
           In an era of rising uncertainty, &quot;standard&quot; security isn&apos;t
           enough. Your assets, your people, and your peace of mind require a
           security partner who is proactive, professional, and prepared for
@@ -56,7 +57,7 @@ export function HomeHeroIntroCard({ className = "" }: HomeHeroIntroCardProps) {
           services tailored to the unique needs of businesses, residential
           communities, and high-risk facilities.
         </p>
-        <p>
+        <p className="text-[13px] font-light font-[Barlow] sm:text-[16px] md:text-[20px] lg:text-[24px] xl:text-[30px]">
           From high-visibility vehicle patrols to discrete executive protection,
           our mission is to provide an unbreakable line of defense so you can
           focus on what matters most.
